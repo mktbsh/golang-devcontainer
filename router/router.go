@@ -27,5 +27,12 @@ func Init() *echo.Echo {
 		users.POST("", controller.CreateUser)
 	}
 
+	if config.Config.IsDev() {
+		debug := e.Group("/_debug")
+		{
+			debug.GET("/sqlite3.db", controller.GetSqliteFile)
+		}
+	}
+
 	return e
 }
