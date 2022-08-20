@@ -1,0 +1,9 @@
+development:
+  debug: true
+  database:
+    path: development.db
+
+production:
+  debug: false
+  database:
+    path: data.db

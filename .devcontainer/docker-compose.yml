@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    tty: true
+    stdin_open: true
+    command: /bin/bash
+    volumes:
+      - ..:/workspace
+    ports:
+      - 8080:8080
