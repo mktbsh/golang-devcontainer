@@ -3,7 +3,7 @@ module github.com/mktbsh/golang-devcontainer
 go 1.19
 
 require (
-	github.com/labstack/echo/v4 v4.8.0
+	github.com/labstack/echo/v4 v4.9.0
 	github.com/oklog/ulid/v2 v2.1.0
 	github.com/stretchr/testify v1.7.2
 	github.com/uptrace/bun v1.1.7
